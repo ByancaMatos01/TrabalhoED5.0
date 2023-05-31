@@ -432,6 +432,11 @@ public class Tela extends JFrame {
 		scrollPane.setViewportView(textAreaConsultaOrientacao);
 
 		CosultaOrientacao CCont= new CosultaOrientacao (textFieldCodigoOrientacao, textAreaConsultaOrientacao, textFieldCoDGRUPOOrientacao, textFieldTituloOrientacao,  textFieldDataOrientacaoOrientacao, textArea);
+		
+		JButton btnultimaOrientacao = new JButton("Ultima");
+		btnultimaOrientacao.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnultimaOrientacao.setBounds(418, 140, 134, 23);
+		ConsultarOrientação.add(btnultimaOrientacao);
 		btnConsultarOrientacao.addActionListener(CCont);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
